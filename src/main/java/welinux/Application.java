@@ -1,4 +1,4 @@
-package com.mkyong;
+package welinux;
 
 import java.io.File;
 import java.io.FileInputStream;

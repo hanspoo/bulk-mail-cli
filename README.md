@@ -11,6 +11,13 @@ cd bulk-mail-cli
 
 In src/main/resources/application.properties modify the email account and password used for send email.
 
+An alternative is to override with environment variables:
+
+```
+export SPRING_MAIL_USERNAME=my-user@gmail.com
+export SPRING_MAIL_PASSWORD=123456
+```
+
 ```
 mvn install
 java -jar ./target/bulk-mail-1.0.jar --template=/tmp/mail-template.txt --mail-list=/tmp/correos-prueba.csv --subject="Testing command line"
