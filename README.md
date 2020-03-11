@@ -4,14 +4,17 @@ Given a csv file with a mailing list and a template with the body of the mail, y
 
 Usage:
 
+```
 git clone https://github.com/hanspoo/bulk-mail-cli
 cd bulk-mail-cli
+```
 
 In src/main/resources modify the email account and password used for send email.
 
+```
 mvn install
-
 java -jar ./target/bulk-mail-1.0.jar --template=/tmp/mail-template.txt --mail-list=/tmp/correos-prueba.csv --subject="Testing command line"
+```
 
 The code does this:
 
