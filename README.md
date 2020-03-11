@@ -1,10 +1,18 @@
-# Bulk mail from command line
+# Send bulk mail from command line
 
-Send bulk mail from command line, you have a csv file with a mailing list and a template that corresponds to the body of the mail.
+Given a csv file with a mailing list and a template with the body of the mail, you will send your mailing list.
 
-This kind of applications are called mail merger or something like that.
+Usage:
 
-This application works as follows:
+Fiest in src/main/resources modify the email account and password used for send email.
+
+git clone https://github.com/hanspoo/bulk-mail-cli
+cd bulk-mail-cli
+mvn install
+
+java -jar ./target/bulk-mail-1.0.jar --template=/tmp/mail-template.txt --mail-list=/tmp/correos-prueba.csv --subject="Testing command line"
+
+The code does this:
 
 1.- Open mailing list csv file, i.e.
 ```
@@ -29,17 +37,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac quam tortor.
 
 5.- send the email.
 
-
-Usage:
-
-git clone https://github.com/hanspoo/bulk-mail-cli
-cd bulk-mail-cli
-
-In src/main/resources modify the email account and password used for send email.
-
-mvn install
-
-java -jar ./target/spring-boot-send-email-1.0.jar --template=/tmp/mail-template.txt --mail-list=/tmp/correos-prueba.csv --subject="Testing command line"
 
 Cloned from:
 Article link : https://www.mkyong.com/spring-boot/spring-boot-how-to-send-email-via-smtp/
