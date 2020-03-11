@@ -4,7 +4,7 @@ Given a csv file with a mailing list and a template with the body of the mail, y
 
 Usage:
 
-Fiest in src/main/resources modify the email account and password used for send email.
+First in src/main/resources modify the email account and password used for send email.
 
 git clone https://github.com/hanspoo/bulk-mail-cli
 cd bulk-mail-cli
