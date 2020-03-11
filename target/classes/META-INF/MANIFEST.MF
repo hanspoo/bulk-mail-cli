@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: Bulk mail from command line
+Implementation-Version: 1.0
+Built-By: hans
+Implementation-Vendor-Id: org.springframework.boot
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://www.welinux.cl
+Created-By: Maven Integration for Eclipse
+
