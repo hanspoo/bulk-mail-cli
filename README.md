@@ -9,7 +9,7 @@ git clone https://github.com/hanspoo/bulk-mail-cli
 cd bulk-mail-cli
 ```
 
-In src/main/resources modify the email account and password used for send email.
+In src/main/resources/application.properties modify the email account and password used for send email.
 
 ```
 mvn install
